@@ -21,12 +21,15 @@ Credit to the [lancache.net](https://lancache.net) team for all their work on co
 2. `git clone git@github.com:zeorpingheroes/lancache.git /etc/nginx`
 
 ## Prepare cache directories
-1. `mkdir -p /srv/lancache/logs /srv/lancache/data /srv/lancache/tmp`
+1. `mkdir -p /srv/lancache/logs /srv/lancache/data`
 2. `chown -r www-data:www-data /srv/lancache`
 
 To use a different directory, find and replace in the config files:
 
 `find /etc/nginx -type f -name "*.conf" -print0 | xargs -0 sed -i'' -e 's|/srv/lancache|/your/path|g'`
+
+## Set maximum cache size
+`sed -i -e 's/max_size=3000g/max_size=1000g/g' /etc/nginx.conf`
 
 ## Test the configuration
 `nginx -t`
