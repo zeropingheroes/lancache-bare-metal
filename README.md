@@ -18,7 +18,7 @@ Credit to the [lancache.net](https://lancache.net) team for all their work on co
 
 ## Install lancache configuration
 1. `mv /etc/nginx /etc/nginx.default`
-2. `git clone git@github.com:zeorpingheroes/lancache.git /etc/nginx`
+2. `git clone git@github.com:zeorpingheroes/lancache-bare-metal.git /etc/nginx`
 
 ## Prepare directories
 1. `mkdir -p /srv/lancache/data /srv/lancache/logs/http /srv/lancache/logs/stream`
