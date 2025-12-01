@@ -22,7 +22,7 @@ Credit to the [lancache.net](https://lancache.net) team for all their work on co
 
 ## Prepare directories
 1. `mkdir -p /srv/lancache/data /srv/lancache/logs/http /srv/lancache/logs/stream`
-2. `chown -r www-data:www-data /srv/lancache`
+2. `chown -R www-data:www-data /srv/lancache`
 
 To use a different directory, find and replace in the config files:
 
